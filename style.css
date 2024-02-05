@@ -242,8 +242,8 @@ header .socials ul li:hover {
 .section-heading {
   color: var(--secondary);
   text-align: center;
-  margin-bottom: 1rem;
-  line-height: 5.5;
+  margin-bottom: 0.5rem;
+  line-height: 4.5;
 }
 .section-heading {
   margin-bottom: 1rem;
@@ -281,7 +281,7 @@ section.services .card-wrapper .card {
 section.services .card-wrapper .card img {
   width: 25%;
   position: absolute;
-  top: -4.5rem;
+  top: -2rem;
   left: 50%;
   transform: translateX(-60%);
 }
@@ -307,13 +307,13 @@ section.services .card-wrapper .card:hover {
 
 
 section.projects {
-  text-align: center;
   background: linear-gradient(rgba(26, 25, 25, 0.7), rgba(0, 0, 0, 0.7));
   color: var(--pure);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 77% 90%, 0 100%);
-  padding-bottom: 9rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 85%, 0 100%);
+  padding-bottom: 5rem;
 }
 #projects .container .heading{
+  text-align: center;
   padding: 25px;
 }
 section.projects a {
@@ -324,20 +324,20 @@ section.projects span {
   color: var(--primary);
 }
 section.projects p {
+  font-size: small;
   margin-bottom: 1rem;
   font-family: 'Lato' sans-serif;
 }
-section.project-list .container {
-  text-align: center;
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: var(--light);
-  padding-left: 90px;
-  padding-top: 80px;
+section.projects  .project-list h4{
+  color: var(--light);
 }
-section.projects .project-list .proj{
-  padding: 15px;
+section.projects .project-list{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-column-gap: 4rem;
+  grid-row-gap: 1rem;
+  padding-top: 40px;
+  padding-left: 40px;
 }
 section.project-list a {
   color: var(--primary);
@@ -345,53 +345,9 @@ section.project-list a {
   display: block;
   padding-bottom: 45px;
 }
-section.blog {
-  background: var(--dark);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
-  padding-bottom: 12rem;
-}
-section.blog .section-heading {
-  color: var(--pure);
-}
-section.blog .card-wrapper .card {
-  background: var(--dark);
-}
-section.blog .card-wrapper .card .card-content {
-  background: var(--pure);
-  padding: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-section.blog .card-wrapper .card .img-wrapper {
-  padding: 0rem 1rem 1rem 25rem;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-section.blog .card-wrapper .card .card-content h1 {
-  font-size: 1rem;
-  font-weight: 600;
-}
-section.blog .card-wrapper .card .card-content a {
-  color: var(--secondary);
-  text-decoration: none;
-}
-section.blog .card-wrapper .card .card-content span {
-  color: var(--ternary);
-  font-size: 0.8rem;
-}
-section.blog .card-wrapper .card .card-content p {
-  font-family: 'Lato' sans-serif;
-  color: var(--ternary);
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-section.blog .card-wrapper .card .card-content a.read-more {
-  font-size: 0.8rem;
-}
-section.blog .card-wrapper .card .card-content a:hover {
-  color: var(--primary);
-}
+
+
+
 
 .site-main-wrapper {
   position: relative;
